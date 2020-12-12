@@ -1,0 +1,137 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+section#section-1 {
+  position: relative;
+}
+
+section#section-1 div.container {
+  position: relative;
+  background: white;
+}
+
+section#section-1 nav {
+  padding: 15px 0;
+}
+
+section#section-1 nav a {
+  font-size: 23px;
+  color: #102a42;
+  background: transparent;
+  margin-right: 20px;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  font-family: cursive;
+}
+
+section#section-1 nav a:hover {
+  color: #ba5d2c;
+  text-decoration: none;
+}
+
+section#section-1 nav div.cart {
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+section#section-1 nav div.cart i {
+  color: #102a42;
+  font-size: 26px;
+}
+
+section#section-1 nav div.cart span {
+  display: inline-block;
+  position: absolute;
+  right: 4px;
+  top: -11px;
+  color: white;
+  background: #ba5d2c;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+section#section-1 div.header {
+  background: #f1f5f8;
+}
+
+section#section-1 div.header div.container {
+  background: #f1f5f8;
+  padding: 25px 0;
+}
+
+section#section-1 div.header div.container h1 {
+  color: #617d98;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+section#section-2 div.container {
+  padding: 100px 0;
+}
+
+section#section-2 div.container h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #102a42;
+  text-align: center;
+}
+
+section#section-2 span {
+  color: #ba5d2c;
+}
+
+section#section-2 p {
+  line-height: 2;
+  max-width: 45em;
+  margin: auto;
+  margin-top: 30px;
+  color: #617d98;
+}
+
+@media screen and (max-width: 575px) {
+  section#section-1 nav div.nav {
+    justify-content: center !important;
+    padding-top: 15px;
+  }
+
+  section#section-1 nav div.logo {
+    display: none;
+  }
+
+  section#section-1 nav div.cart {
+    display: none;
+  }
+
+  section#section-1 div.header {
+    padding: 0 20px;
+  }
+
+  section#section-1 div.header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  section#section-1 div.header h2 {
+    font-size: 35px;
+  }
+  section#section-2 p {
+    width: 90%;
+    margin: auto;
+  }
+  body {
+    overflow: auto;
+  }
+}

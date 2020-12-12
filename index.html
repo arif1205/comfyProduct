@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/fbba2cd293.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="section-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <nav class="row justify-content-between">
+        <div class="nav col-12 col-sm-4 align-self-center">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="list/index.html">Products</a></li>
+            <li class="list-inline-item"><a href="about/about.html" class="mr-0">About</a></li>
+          </ul>
+        </div>
+        <div class="logo col-12 col-sm-4 align-self-center text-center">
+          <img src="logo-white.svg" alt="logo">
+        </div>
+        <div class="cart col-12 col-sm-4 align-self-center text-right" onclick="openCart(1)">
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </div>
+      </nav>
+      <div class="header">
+        <h1>Rest, Relax, Unwind</h1>
+        <h2>Embrace your choices - we do</h2>
+        <button class="btn btn-outline-light">Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-2">
+    <div class="container">
+      <div class="head">
+        <h1><span>/</span> Featured</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="img">
+            <img src="product-1.jpg" alt="product" class="w-100">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+            </div>
+          </div>
+          <div class="img-text">
+            <span class="title">High-Back Bench</span>
+            <span class="amount">$<span class="price">9.99</span></span>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="img">
+            <img src="product-2.jpg" alt="product" class="w-100">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+            </div>
+          </div>
+          <div class="img-text">
+            <span class="title">Utofia Sofa</span>
+            <span class="amount">$<span class="price">28.99</span></span>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="img">
+            <img src="product-3.jpg" alt="product" class="w-100">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+            </div>
+          </div>
+          <div class="img-text">
+            <span class="title">Entertainment Center</span>
+            <span class="amount">$<span class="price">38.99</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <a href="list/index.html">All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="overlay-main">
+
+  </div>
+  <div class="product-list">
+    <div class="inner">
+      <div class="upper-part">
+        <div class="cross"><span onclick="closeCart()">&times;</span></div>
+        <div class="head text-center">
+          <h2>Your Bag</h2>
+        </div>
+      </div>
+      <div class="middle-part">
+        <!-- <div class="list-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-3 align-self-center">
+                <img src="product-1.jpg" alt="product" class="w-100">
+              </div>
+              <div class="col-6 align-self-center">
+                <h5>Utopia Sofa</h5>
+                <span class="d-block price">$<span>39.99</span></span>
+                <span class="remove">Remove</span>
+              </div>
+              <div class="col-3 d-flex flex-column justify-content-between align-self-center">
+                <span><i class="fas fa-chevron-up"></i></span>
+                <span>1</span>
+                <span><i class="fas fa-chevron-down"></i></span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="lower-part">
+        <div class="container">
+          <h1 class="text-center">Total: $<span></span></h1>
+          <button class="btn btn-block">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

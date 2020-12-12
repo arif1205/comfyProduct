@@ -1,0 +1,389 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section#section-1 {
+  position: relative;
+}
+
+section#section-1 div.container {
+  position: relative;
+  background: white;
+}
+
+section#section-1 nav {
+  padding: 15px 0;
+}
+
+section#section-1 nav a {
+  font-size: 23px;
+  color: #102a42;
+  background: transparent;
+  margin-right: 20px;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  font-family: cursive;
+}
+
+section#section-1 nav a:hover {
+  color: #ba5d2c;
+  text-decoration: none;
+}
+
+section#section-1 nav div.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+section#section-1 nav div.cart i {
+  color: #102a42;
+  font-size: 26px;
+}
+
+section#section-1 nav div.cart span {
+  display: inline-block;
+  position: absolute;
+  right: 4px;
+  top: -11px;
+  color: white;
+  background: #ba5d2c;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+section#section-1 div.header {
+  background: #f1f5f8;
+}
+
+section#section-1 div.header div.container {
+  background: #f1f5f8;
+  padding: 25px 0;
+}
+
+section#section-1 div.header div.container h1 {
+  color: #617d98;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+section#section-2 div.container {
+  padding: 60px 0;
+}
+
+section#section-2 div.container div.row div.product-side {
+  padding: 0 15px;
+}
+
+section#section-2 div.container div.row div.product-side div.stick {
+  z-index: 1 !important;
+}
+
+section#section-2 div.container div.row div.product-side div.search {
+  margin-bottom: 20px;
+}
+
+section#section-2 div.container div.row div.product-side div.search input[type=search] {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  background: #f1f5f8;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+section#section-2 div.container div.row div.product-side div.search input:focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section#section-2 div.container div.row div.product-side div.tag-list h4 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+section#section-2 div.container div.row div.product-side div.tag-list ul li {
+  display: block;
+  margin: 0.25em 0;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  background: transparent;
+  border-color: transparent;
+  letter-spacing: 1px;
+  color: #617d98;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+section#section-2 div.container div.row div.product-side div.price-range h4 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+section#section-2 div.container div.row div.product-side div.price-range p {
+  color: #617d98;
+  font-size: 14px;
+}
+
+section#section-2 div.container div.row div.product-side div.price-range input {
+  width: 100%;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 {
+  margin-bottom: 20px;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img {
+  height: 150px;
+  position: relative;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img img {
+  border-radius: 5px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img div.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img div.icon i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ba5d2c;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img:hover div.icon i {
+  opacity: 1;
+  visibility: visible;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img-text span {
+  display: block;
+  text-align: center;
+  color: #617d98;
+  margin-bottom: 5px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img-text span.amount {
+  margin-top: 0;
+  color: #324d67;
+  font-weight: 700;
+}
+
+section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img-text span.amount span {
+  display: inline-block;
+  margin-top: 0;
+  color: #324d67;
+  font-weight: 700;
+}
+
+div.overlay-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+div.product-list {
+  position: fixed;
+  height: 100%;
+  width: 30%;
+  right: -100%;
+  top: 0;
+  background: #f2f2f2;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+div.product-list div.inner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+div.product-list div.inner div.upper-part {
+  width: 100%;
+}
+
+div.product-list div.inner div.upper-part div.cross {
+  padding: 0 20px;
+  height: 60px;
+}
+
+div.product-list div.inner div.upper-part div.cross span {
+  cursor: pointer;
+  font-weight: bolder;
+  color: #333;
+  font-size: 50px;
+  display: block;
+  line-height: 60px;
+}
+
+div.product-list div.inner div.upper-part div.head {
+  font-family: 'Kaushan Script', cursive;
+}
+
+div.product-list div.inner div.middle-part {
+  height: 55vh;
+  overflow: auto;
+}
+
+div.product-list div.inner div.middle-part div.list-item {
+  margin-bottom: 15px;
+  overflow-y: scroll;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-3 img {
+  max-height: 50px;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-6 h5 {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-6 span.price {
+  color: #324d67;
+  font-size: 11px;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-6 span.remove {
+  color: #617d98;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-3 {
+  text-align: center;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-3 span {
+  color: #324d67;
+  font-size: 14px;
+}
+
+div.product-list div.inner div.middle-part div.list-item div.container div.row div.col-3 span i {
+  color: #ba5d2c;
+  cursor: pointer;
+}
+
+div.product-list div.inner div.lower-part {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 50px 20px;
+  background: #f2f2f2;
+  z-index: 1;
+}
+
+div.product-list div.inner div.lower-part h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+}
+
+div.product-list div.inner div.lower-part button {
+  background: #ba5d2c;
+  outline: #ba5d2c;
+  color: white;
+}
+
+div.product-list div.inner div.lower-part button:hover {
+  outline: #ba5d2c;
+  opacity: 0.7;
+}
+
+div.product-list div.inner div.lower-part button:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 575px) {
+  section#section-1 nav div.nav {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    padding-top: 15px;
+  }
+  section#section-1 nav div.logo {
+    display: none;
+  }
+  section#section-1 nav div.cart {
+    position: fixed;
+    z-index: 2;
+    top: 35px;
+    right: 23px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section#section-1 div.header {
+    padding: 0 20px;
+  }
+  section#section-1 div.header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  section#section-1 div.header h2 {
+    font-size: 35px;
+  }
+  div.product-list {
+    width: 100%;
+  }
+  section#section-2 div.container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  section#section-2 div.container div.row div.product-row div.row div.col-sm-4 div.img {
+    height: 230px;
+  }
+  section#section-2 div.container div.row div.product-row div.row div.col-sm-4 {
+    margin-bottom: 20px;
+  }
+  section#section-2 div.container div.row div.product-side {
+    margin-bottom: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

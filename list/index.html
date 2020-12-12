@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/fbba2cd293.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="section-1">
+    <div class="container">
+      <nav class="row justify-content-between">
+        <div class="nav col align-self-center">
+          <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item"><a href="../index.html">Home</a></li>
+            <li class="list-inline-item"><a href="index.html">Products</a></li>
+            <li class="list-inline-item"><a href="../about/about.html" class="mr-0">About</a></li>
+          </ul>
+        </div>
+        <div class="logo col align-self-center text-center">
+          <img src="logo-black.svg" alt="logo">
+        </div>
+        <div class="cart col align-self-center text-right" onclick="openCart(1)">
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </div>
+      </nav>
+      </div>
+      <div class="header">
+        <div class="container">
+          <h1>Home <span>/</span> Products</h1>
+        </div>
+      </div>
+  </section>
+
+  <section id="section-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-2 product-side">
+          <div class="stick sticky-top">
+            <div class="search">
+              <input type="search" name="search" id="search" placeholder="Search..." onkeyup="searchProduct(this)">
+            </div>
+            <div class="tag-list">
+              <h4>Company</h4>
+              <ul class="list-unstyled">
+                <li onclick="productTab(this)">All</li>
+                <li onclick="productTab(this)">Ikea</li>
+                <li onclick="productTab(this)">Marcos</li>
+                <li onclick="productTab(this)">Caressa</li>
+                <li onclick="productTab(this)">Liddy</li>
+              </ul>
+            </div>
+            <div class="price-range">
+              <h4>Price</h4>
+              <input type="range" name="range" id="range" min="0" max="80" value="80" oninput="sortProduct(this)">
+              <p>value: $<span>80</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-10 product-row">
+          <div class="row">
+            <div class="col-sm-4" data-product-type = "All Ikea">
+              <div class="img">
+                <img src="about-1.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">High-Back Bench</span>
+                <span class="amount">$<span class="price">9.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Marcos">
+              <div class="img">
+                <img src="about-2.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Alabany Table</span>
+                <span class="amount">$<span class="price">79.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Caressa">
+              <div class="img">
+                <img src="about-3.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Accent Chair</span>
+                <span class="amount">$<span class="price">25.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Caressa">
+              <div class="img">
+                <img src="about-4.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Wooden Table</span>
+                <span class="amount">$<span class="price">45.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Caressa">
+              <div class="img">
+                <img src="about-5.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Dining Table</span>
+                <span class="amount">$<span class="price">9.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Liddy">
+              <div class="img">
+                <img src="about-6.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Sofa Set</span>
+                <span class="amount">$<span class="price">69.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Marcos">
+              <div class="img">
+                <img src="about-7.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Modern Bookshelf</span>
+                <span class="amount">$<span class="price">8.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Liddy">
+              <div class="img">
+                <img src="about-8.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Emperor Bed</span>
+                <span class="amount">$<span class="price">21.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Marcos">
+              <div class="img">
+                <img src="about-9.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Utopia Sofa</span>
+                <span class="amount">$<span class="price">39.95</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Liddy">
+              <div class="img">
+                <img src="about-10.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Entertainment Center</span>
+                <span class="amount">$<span class="price">29.98</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Ikea">
+              <div class="img">
+                <img src="about-11.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Alabany Sectional</span>
+                <span class="amount">$<span class="price">10.99</span></span>
+              </div>
+            </div>
+            <div class="col-sm-4" data-product-type = "All Liddy">
+              <div class="img">
+                <img src="about-12.jpg" alt="product" class="w-100">
+                <div class="icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-search"></i>
+                  <i class="fas fa-shopping-cart mr-0" onclick="openCart(this)"></i>
+                </div>
+              </div>
+              <div class="img-text">
+                <span class="title">Leather Sofa</span>
+                <span class="amount">$<span class="price">9.99</span></span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="overlay-main">
+
+  </div>
+  <div class="product-list">
+    <div class="inner">
+      <div class="upper-part">
+        <div class="cross"><span onclick="closeCart()">&times;</span></div>
+        <div class="head text-center">
+          <h2>Your Bag</h2>
+        </div>
+      </div>
+      <div class="middle-part">
+        <!-- <div class="list-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-3 align-self-center">
+                <img src="product-1.jpg" alt="product" class="w-100">
+              </div>
+              <div class="col-6 align-self-center">
+                <h5>Utopia Sofa</h5>
+                <span class="d-block price">$<span>39.99</span></span>
+                <span class="remove">Remove</span>
+              </div>
+              <div class="col-3 d-flex flex-column justify-content-between align-self-center">
+                <span><i class="fas fa-chevron-up"></i></span>
+                <span>1</span>
+                <span><i class="fas fa-chevron-down"></i></span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="lower-part">
+        <div class="container">
+          <h1 class="text-center">Total: $<span></span></h1>
+          <button class="btn btn-block">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
